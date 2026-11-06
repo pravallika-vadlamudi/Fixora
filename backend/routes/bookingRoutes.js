@@ -1,0 +1,12 @@
+import { Router } from "express";
+import { createBooking, myBookings, allBookings, updateStatus, cancelBooking, assignProvider } from "../controllers/bookingController.js";
+import { protect, allowRoles } from "../middleware/auth.js";
+const router = Router();
+router.use(protect);
+router.post("/", allowRoles("customer"), createBooking);
+router.get("/my", myBookings);
+router.get("/", allowRoles("admin"), allBookings);
+router.patch("/:id/status", allowRoles("provider", "admin"), updateStatus);
+router.patch("/:id/cancel", allowRoles("customer"), cancelBooking);
+router.patch("/:id/assign", allowRoles("admin"), assignProvider);
+export default router;
