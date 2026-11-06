@@ -159,20 +159,5 @@ Base URL: `http://localhost:5000/api`
 
 Update the backend `CLIENT_URL` to your deployed frontend origin. Configure MongoDB Atlas network access and database user permissions securely. Replace placeholder URLs with the real deployment URLs after deployment.
 
-## Important academic submission work
-Before submitting:
-1. Add all three team members' names and registration numbers to the PPT and repository.
-2. Update the README team section.
-3. Test the complete flow using your own MongoDB database.
-4. Capture genuine screenshots from your running project and replace the PPT screenshot placeholders.
-5. Deploy both frontend and backend and add the actual public links to the README.
-6. Review the code and be prepared to explain each module during evaluation.
 
-## Team details
-- Team name: Add your team name
-- Member 1: Add name – Add registration number
-- Member 2: Add name – Add registration number
-- Member 3: Add name – Add registration number
-
-## Academic integrity and security
-This repository is a project starter implementation intended for learning and customization. Do not submit placeholder team details or claim deployment before completing it. Never commit `.env`, database passwords, or JWT secrets.
+V.Pravallika
